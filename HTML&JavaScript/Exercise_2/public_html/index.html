@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Es2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="form_wrapper">
+                <h1 id="title">Es2</h1>
+                <form>
+                    <table>
+                        <tr>
+                            <td>Cognome</td>
+                            <td><input type="text" id="cognome" onkeydown="modifyingForm('cognome')" autocomplete="off" maxlength="50"></td>
+                        </tr>
+                        <tr>
+                            <td>Nome</td>
+                            <td><input type="text" id="nome" onkeydown="modifyingForm('nome')" autocomplete="off" maxlength="50"></td>
+                        </tr>
+                        <tr>
+                            <td>Sesso</td>
+                            <td>
+                                <label class="container" style="margin-left: 10px;">Maschio
+                                    <input type="radio" name="sesso" id="maschio" checked="checked" onClick="modifyingForm()">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Femmina
+                                    <input type="radio" name="sesso" id="femmina" onClick="modifyingForm()">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ateneo</td>
+                            <td>
+                                <select id="ateneo" onchange="modifyingForm()">
+                                    <option disabled selected value id="defaultOption">Scegli una regione</option>
+                                    <option value="Università IUAV di Venezia">Università IUAV di Venezia</option>
+                                    <option value="Università degli Studi di Verona - Legnaro">Università degli Studi di Verona - Legnaro</option>
+                                    <option value="Università degli Studi di Padova - Padova">Università degli Studi di Padova - Padova</option>
+                                    <option value="Università Cà Foscari Venezia - Treviso">Università Cà Foscari Venezia - Treviso</option>
+                                    <option value="Università Cà Foscari Venezia - Venezia">Università Cà Foscari Venezia - Venezia</option>
+                                    <option value="Parco Scientifico e Tecnologico di Venezia">Parco Scientifico e Tecnologico di Venezia</option>
+                                    <option value="Parco Scientifico e Tecnologico - Veneto Innovazione">Parco Scientifico e Tecnologico - Veneto Innovazione</option>
+                                    <option value="Parco Scientifico e Tecnologico - Galileo">Parco Scientifico e Tecnologico - Galileo</option>
+                                    <option value="Parco Scientifico di Verona">Parco Scientifico di Verona</option>
+                                    <option value="Istituto Zooprofilattico Sperimentale delle Venezie">Istituto Zooprofilattico Sperimentale delle Venezie</option>
+                                    <option value="Istituto Veneto per i Beni Culturali">Istituto Veneto per i Beni Culturali</option>
+                                    <option value="Istituto per l'energetica e le interfasi - CNR">Istituto per l'energetica e le interfasi - CNR</option>
+                                    <option value="Istituto per le tecnologie della costruzione - CNR">Istituto per le tecnologie della costruzione - CNR</option>
+                                    <option value="Istituto per la tecnologia delle membrane - CNR">Istituto per la tecnologia delle membrane - CNR</option>
+                                    <option value="Istituto per la dinamica dei processi ambientali - CNR - Padova">Istituto per la dinamica dei processi ambientali - CNR - Padova</option>
+                                    <option value="Istituto per la dinamica dei processi ambientali - CNR - Venezia">Istituto per la dinamica dei processi ambientali - CNR - Venezia</option>
+                                    <option value="Trentino Alto Adige">Trentino Alto Adige</option>
+                                    <option value="Istituto gas ionizzati - CNR">Istituto gas ionizzati - CNR</option>
+                                    <option value="Istituto di tecnologie biomediche - CNR">Istituto di tecnologie biomediche - CNR</option>
+                                    <option value="Istituto di scienze marine - CNR">Istituto di scienze marine - CNR</option>
+                                    <option value="Istituto di scienze e tecnologie molecolari - CNR">Istituto di scienze e tecnologie molecolari - CNR</option>
+                                    <option value="Istituto di scienze e tecnologie della cognizione - CNR">Istituto di scienze e tecnologie della cognizione - CNR</option>
+                                    <option value="Istituto di scienze dell'atmosfera e del clima - CNR">Istituto di scienze dell'atmosfera e del clima - CNR"</option>
+                                    <option value="Istituto di ricerca per la protezione idrogeologica - CNR">Istituto di ricerca per la protezione idrogeologica - CNR</option>
+                                    <option value="Istituto di neuroscienze - CNR">Istituto di neuroscienze - CNR</option>
+                                    <option value="Istituto di ingegneria biomedica - CNR">Istituto di ingegneria biomedica - CNR</option>
+                                    <option value="Istituto di geoscienze e georisorse - CNR">Istituto di geoscienze e georisorse - CNR"</option>
+                                    <option value="Istituto di fotonica e nanotecnologie - CNR">Istituto di fotonica e nanotecnologie - CNR</option>
+                                    <option value="Istituto di elettronica e di ingegneria dell'informazione e delle telecomunicazioni - CNR">Istituto di elettronica e di ingegneria dell'informazione e delle telecomunicazioni - CNR</option>
+                                    <option value="Istituto di chimica inorganica e delle superfici - CNR">Istituto di chimica inorganica e delle superfici - CNR</option>
+                                    <option value="Istituto di chimica biomolecolare - CNR">Istituto di chimica biomolecolare - CNR</option>
+                                    <option value="Istituto di biologia agro-ambientale e forestale - CNR">Istituto di biologia agro-ambientale e forestale - CNR</option>
+                                    <option value="Centro di responsabilità scientifica INFM - CNR">Centro di responsabilità scientifica INFM - CNR</option>
+                                    <option value="Accademia di Belle Arti di Venezia">Accademia di Belle Arti di Venezia</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CAP</td>
+                            <td><input type="text" id="cap" onkeyup="modifyingForm('cap')" autocomplete="off" maxlength="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Studente lavoratore</td>
+                            <td>
+                                <label id="container">
+                                    <input type="checkbox" onclick="modifyingForm()" id="studenteLavoratore"/>
+                                    <span id="checkmark"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Descrizione del lavoro svolto</td>
+                            <td><input type="text" id="descrizioneLavoro" onkeydown="modifyingForm()" autocomplete="off" maxlength="80"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="reset" id="reset" onclick="modifyingForm()"><input type="submit" id="invia" onclick="verificaDatiInseriti()"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="datiInseritiVerificati"></div>
+            <script>
+                function modifyingForm(id) {
+                    switch (id) {
+                        case "cap":
+                            if (document.getElementById("cap").value.length === 5 && !isNaN(document.getElementById("cap").value))
+                                document.getElementById("datiInseritiVerificati").innerHTML = "CAP valid";
+                            else
+                                document.getElementById("datiInseritiVerificati").innerHTML = "CAP not valid";
+                            break;
+                        case "cognome":
+                            if (isNaN(document.getElementById("cognome").value))
+                                document.getElementById("datiInseritiVerificati").innerHTML = "Surname valid";
+                            else
+                                document.getElementById("datiInseritiVerificati").innerHTML = "Surname not valid";
+                            break;
+                        case "nome":
+                            if (isNaN(document.getElementById("nome").value))
+                                document.getElementById("datiInseritiVerificati").innerHTML = "Name valid";
+                            else
+                                document.getElementById("datiInseritiVerificati").innerHTML = "Name not valid";
+                            break;
+                        default:
+                            document.getElementById("datiInseritiVerificati").innerHTML = "";
+                    }
+                }
+                function verificaDatiInseriti() {
+                    if (document.getElementById("cognome").value !== "" &&
+                            document.getElementById("nome").value !== "" &&
+                            document.getElementById("ateneo").value !== document.getElementById("defaultOption").value &&
+                            (!document.getElementById("studenteLavoratore").checked ||
+                                    (document.getElementById("studenteLavoratore").checked && document.getElementById("descrizioneLavoro").value !== "")))
+                        alert("Dati verificati!");
+                }
+            </script>
+        </div>
+    </body>
+</html>

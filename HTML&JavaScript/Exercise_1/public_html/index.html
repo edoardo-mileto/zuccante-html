@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>HTML&ampJavaScript_Exercise_1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="form_wrapper">
+                <h1 id="title">Esercizio _ 1</h1>
+                <form>
+                    <table>
+                        <tr>
+                            <td>Cognome</td>
+                            <td><input type="text" id="cognome" autocomplete="off" maxlength="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Nome</td>
+                            <td><input type="text" id="nome" autocomplete="off" maxlength="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Matricola</td>
+                            <td><input type="text" id="matricola" autocomplete="off" maxlength="12"></td>
+                        </tr>
+                        <tr>
+                            <td>Regione di residenza</td>
+                            <td>
+                                <select id="regioni">
+                                    <option disabled selected value id="defaultOption">Scegli una regione</option>
+                                    <option value="Abruzzo">Abruzzo</option>
+                                    <option value="Basilicata">Basilicata</option>
+                                    <option value="Calabria">Calabria</option>
+                                    <option value="Campania">Campania</option>
+                                    <option value="Emilia Romagna">Emilia Romagna</option>
+                                    <option value="Friuli Venezia Giulia">Friuli Venezia Giulia</option>
+                                    <option value="Lazio">Lazio</option>
+                                    <option value="Liguria">Liguria</option>
+                                    <option value="Lombardia">Lombardia</option>
+                                    <option value="Marche">Marche</option>
+                                    <option value="Molise">Molise</option>
+                                    <option value="Piemonte">Piemonte</option>
+                                    <option value="Puglia">Puglia</option>
+                                    <option value="Sardegna">Sardegna</option>
+                                    <option value="Sicilia">Sicilia</option>
+                                    <option value="Toscana">Toscana</option>
+                                    <option value="Trentino Alto Adige">Trentino Alto Adige</option>
+                                    <option value="Umbria">Umbria</option>
+                                    <option value="Valle d'Aosta">Valle d'Aosta</option>
+                                    <option value="Veneto">Veneto</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" id="email" autocomplete="off" maxlength="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Telefono</td>
+                            <td><input type="text" id="telefono" autocomplete="off" maxlength="15"></td>
+                        </tr>
+                        <tr>
+                            <td>Richieste particolari</td>
+                            <td><textarea id="richiesteParticolari"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="reset" id="reset"><input type="submit" id="invia" onclick="verificaDatiInseriti()"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <script>
+                function verificaDatiInseriti() {
+                    if (document.getElementById("cognome").value !== "" &&
+                            document.getElementById("nome").value !== "" &&
+                            !isNaN(document.getElementById("matricola").value) &&
+                            document.getElementById("regioni").value !== document.getElementById("defaultOption").value &&
+                            ((document.getElementById("email").value !== "") || document.getElementById("telefono").value !== ""))
+                        alert("Dati verificati!");
+                }
+            </script>
+        </div>
+    </body>
+</html>
