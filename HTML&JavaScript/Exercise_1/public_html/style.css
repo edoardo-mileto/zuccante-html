@@ -15,7 +15,7 @@ h1{
  }
 input[type=text],input[type=email], select {
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -29,24 +29,24 @@ input[type=reset]#reset, input[type=submit]#invia {
     background-color: white;
 }
 input[type=reset]#reset {
-    background-color: #4CAF50;
+    background-color: darkcyan;
     color: white;
     margin-right: 20px;
     border-radius: 4px;
-    padding: 14px 20px;
+    padding: 6px 20px;
 }
 input[type=reset]:hover #reset{
-    background-color: #45a049;
+    background-color: darkslategrey;
 }
-input[type=submit]#invia {
-    background-color: #4CAF50;
+input[type=submit]#send {
+    background-color: darkcyan;
     color: white;
     margin-right: 0px;
     border-radius: 4px;
-    padding: 14px 20px;
+    padding: 6px 20px;
 }
-input[type=submit]:hover #invia {
-    background-color: #45a049;
+input[type=submit]:hover #send {
+    background-color: darkslategrey;
 }
 textarea{
     border-radius: 4px;
