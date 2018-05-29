@@ -1,0 +1,29 @@
+.centrato{
+	margin-top: 100px;
+	text-align: center;
+}
+.bottone{
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+}
+.rosso{
+	background-color: red;
+}
+.verde{
+	background-color: green;
+}
+.blue{
+	background-color: blue;
+}
+.grigio{
+	background-color: white;
+}
+
+.sinistra{
+	text-align: left;
+}
+
+.destra{
+	text-align: right;
+}

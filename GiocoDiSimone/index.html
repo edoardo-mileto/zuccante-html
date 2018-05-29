@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gioco Di Simone</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="stile/css.css" type ="text/css" rel="stylesheet">
+		<script src="script/codice.js">
+		</script>
+	</head>
+	<body>
+		<div class="centrato">
+			<button id="red" class="bottone - grigio" onclick="Controller.__on_click(0)"></button>
+			<button id="green" class="bottone - grigio" onclick="Controller.__on_click(1)"></button>
+			<button id="blue" class="bottone - grigio" onclick="Controller.__on_click(2)"></button>
+		</div>
+		
+		<script>
+			Controller.L = 3;
+			Controller.__gioca(3);
+		</script>
+		
+	</body>
+
+	
+</html>
