@@ -9,18 +9,19 @@ and open the template in the editor.
 		<title>Codice Fiscale</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<script src="codiceFiscale.js"></script>
 		<form>
 			<table>
-				<caption>CodiceFiscale</caption>
+				<h1>Calcolo Codice Fiscale</h1>
 				<tr>
 					<td>
 						Nome:
 					</td>
 					<td>
-						<input type="text" name="nome">
+						<input type="text" name="nome" placeholder="Mario">
 					</td>
 				</tr>
 				<tr>
@@ -28,7 +29,7 @@ and open the template in the editor.
 						Cognome:
 					</td>
 					<td>
-						<input type="text" name="cognome">
+						<input type="text" name="cognome" placeholder="Rossi">
 					</td>
 				</tr>
 				<tr>
@@ -102,7 +103,7 @@ and open the template in the editor.
 					</td>
 				</tr>
 			</table>
-			<input type="submit" value="Submit" onclick="codiceFiscale()">
+			<input type="submit" value="Genera il codice fiscale" onclick="codiceFiscale()">
 		</form>
 	</body>
 </html>

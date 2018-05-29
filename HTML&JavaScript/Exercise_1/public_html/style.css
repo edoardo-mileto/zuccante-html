@@ -10,9 +10,9 @@ div#form_wrapper{
     padding: 20px;
 }
 h1{
-    color: midnightblue;
+     color: midnightblue;
 
-}
+ }
 input[type=text],input[type=email], select {
     width: 100%;
     padding: 12px 20px;
