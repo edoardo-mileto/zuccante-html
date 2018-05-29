@@ -5,6 +5,24 @@ div#wrapper {
     height: 100%;
     text-align: center;
 }
+div#form_wrapper{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+h1{
+    color: midnightblue;
+
+}
+input[type=text],input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
 input[type=reset]#reset, input[type=submit]#invia {
     width: 80px;
@@ -12,13 +30,34 @@ input[type=reset]#reset, input[type=submit]#invia {
     background-color: white;
 }
 input[type=reset]#reset {
+    background-color: #4CAF50;
+    color: white;
     margin-right: 20px;
+    border-radius: 4px;
+    padding: 14px 20px;
+}
+input[type=reset]:hover #reset{
+    background-color: #45a049;
 }
 input[type=submit]#invia {
+    background-color: #4CAF50;
+    color: white;
     margin-right: 0px;
+    border-radius: 4px;
+    padding: 14px 20px;
+}
+input[type=submit]:hover #invia {
+    background-color: #45a049;
+}
+textarea{
+    border-radius: 4px;
 }
 select#regioni {
     padding: 5px 5px;
+}
+div #formwrapper{
+    border-radius: 5px;
+    background-color: #f2f2f2;
 }
 textarea#richiesteParticolari {
     margin-top: 10px;

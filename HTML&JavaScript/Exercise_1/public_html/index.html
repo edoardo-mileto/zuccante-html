@@ -8,20 +8,20 @@
     <body>
         <div id="wrapper">
             <div id="form_wrapper">
-                <h1 id="title">Esercizio _ 1</h1>
+                <h1 id="title" align="left" >Esercizio 1</h1>
                 <form>
                     <table>
                         <tr>
                             <td>Cognome</td>
-                            <td><input type="text" id="cognome" autocomplete="off" maxlength="40"></td>
+                            <td><input type="text" id="cognome" autocomplete="off" maxlength="40" placeholder="Cognome"></td>
                         </tr>
                         <tr>
                             <td>Nome</td>
-                            <td><input type="text" id="nome" autocomplete="off" maxlength="30"></td>
+                            <td><input type="text" id="nome" autocomplete="off" maxlength="30" placeholder="Nome"></td>
                         </tr>
                         <tr>
                             <td>Matricola</td>
-                            <td><input type="text" id="matricola" autocomplete="off" maxlength="12"></td>
+                            <td><input type="text" id="matricola" autocomplete="off" maxlength="12" placeholder="Matricola"></td>
                         </tr>
                         <tr>
                             <td>Regione di residenza</td>
@@ -53,11 +53,11 @@
                         </tr>
                         <tr>
                             <td>Email</td>
-                            <td><input type="email" id="email" autocomplete="off" maxlength="30"></td>
+                            <td><input type="email" id="email" autocomplete="off" maxlength="30" placeholder="Email"></td>
                         </tr>
                         <tr>
                             <td>Telefono</td>
-                            <td><input type="text" id="telefono" autocomplete="off" maxlength="15"></td>
+                            <td><input type="text" id="telefono" autocomplete="off" maxlength="15" placeholder="Telefono"></td>
                         </tr>
                         <tr>
                             <td>Richieste particolari</td>
@@ -65,7 +65,7 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td><input type="reset" id="reset"><input type="submit" id="invia" onclick="verificaDatiInseriti()"></td>
+                            <td><input type="reset" id="reset" align="left"><input type="submit" id="invia" onclick="verificaDatiInseriti()"></td>
                         </tr>
                     </table>
                 </form>
@@ -78,6 +78,9 @@
                             document.getElementById("regioni").value !== document.getElementById("defaultOption").value &&
                             ((document.getElementById("email").value !== "") || document.getElementById("telefono").value !== ""))
                         alert("Dati verificati!");
+                    else {
+                        alert("Dati mancanti")
+                    }
                 }
             </script>
         </div>
